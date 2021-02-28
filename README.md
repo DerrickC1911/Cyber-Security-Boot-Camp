@@ -57,10 +57,10 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-|Jump Box  | No                  | <public ip>          |
-|Elk Stack | No                  | <private ip>         | 
-|Web 1     | No                  | <private ip>         |
-|Web 2     | No                  | <private ip>         |
+|Jump Box  | No                  | public ip            |
+|Elk Stack | No                  | private ip           | 
+|Web 1     | No                  | private ip           |
+|Web 2     | No                  | private ip           |
 
 ### Elk Configuration
 
@@ -89,8 +89,9 @@ We have installed the following Beats on these machines:
 - Web 2 private ip
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
- - metricbeat *collect metrics from the operating system and from services running on the server. It takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash.*
+- In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+ 
+ - metricbeat *collect metrics from the operating system and from services running on the server. It takes the metrics and statistics that it collects and ships them to the    output that you specify, such as Elasticsearch or Logstash.*
  
  - filebeat *The Filebeat module can handle audit logs, deprecation logs, gc logs, server logs, and slow logs*
 
@@ -101,10 +102,10 @@ SSH into the control node and follow the steps below:
 - Copy the confing file to **/etc/metricbeat/metricbeat.yml**.
 - Update the **hosts** file to include...
 - [webservers]
-##Web 1 private ip
-private ip.5 ansible_python_interpreter=/usr/bin/python3
-## Web 2 private ip
-private ip.7 ansible_python_interpreter=/usr/bin/python3
+- Web 1 private ip
+  private ip.5 ansible_python_interpreter=/usr/bin/python3
+- Web 2 private ip
+  private ip.7 ansible_python_interpreter=/usr/bin/python3
 
 [elk]
 ## New VM (Elk-Red-Stack-Proj-1)
@@ -112,9 +113,9 @@ private ip.4 ansible_python_interpreter=/usr/bin/python3
 
 - Run the playbook, and navigate to **Web 1 and Web 2** to check that the installation worked as expected.  Config and playbook file should be copied over to the webserver machines.
 
-_TODO: Answer the following questions to fill in the blanks:_
+Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Metric Where do you copy it? 
-   - We copied mertricbeat-playbook.yml into **/etc/ansible/files/**
+   - We copied mertricbeat-playbook.yml into **/etc/ansible/files/** on both *Web 1 and Web 2* machines.
 
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on? Update the Ansible host file to include ip address of web 1, web 2, and elk machines.  **/etc/ansible/host**  
 
