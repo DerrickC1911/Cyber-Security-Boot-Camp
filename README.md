@@ -35,10 +35,10 @@ The configuration details of each machine that was creatd for this project may b
 
 | Name    | Function       | Ip Addrss | OS    |
 |---------|----------------|-----------|-------|
-| Jumpbox | Gateway        | <private ip>  | Linux |
-| Elk     | Elastic Search | <private ip>  | Linux |
-| Web 1   | Access to Web  | <private ip>  | Linux |
-| Web 2   | Access to Web  | <private ip>  | Linux |
+| Jumpbox | Gateway        | private ip  | Linux |
+| Elk     | Elastic Search | private ip  | Linux |
+| Web 1   | Access to Web  | private ip  | Linux |
+| Web 2   | Access to Web  | private ip  | Linux |
 
 ### Access Policies
 
