@@ -108,7 +108,7 @@ private ip.7 ansible_python_interpreter=/usr/bin/python3
 
 [elk]
 ## New VM (Elk-Red-Stack-Proj-1)
-<private ip.4> ansible_python_interpreter=/usr/bin/python3
+private ip.4 ansible_python_interpreter=/usr/bin/python3
 
 - Run the playbook, and navigate to **Web 1 and Web 2** to check that the installation worked as expected.  Config and playbook file should be copied over to the webserver machines.
 
@@ -119,6 +119,6 @@ _TODO: Answer the following questions to fill in the blanks:_
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on? Update the Ansible host file to include ip address of web 1, web 2, and elk machines.  **/etc/ansible/host**  
 
 - _Which URL do you navigate to in order to check that the ELK server is running?
-   - **http://"<puplic ip>":5601/app/kibana**
+   - **http://Elk puplic ip:5601/app/kibana**
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
