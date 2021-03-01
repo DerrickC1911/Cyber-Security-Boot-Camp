@@ -1,5 +1,0 @@
-Linux Commands
-
-Add user
-sudo adduser <user name>
-sudo addgroup
