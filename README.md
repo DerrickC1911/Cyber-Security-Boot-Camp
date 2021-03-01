@@ -102,13 +102,13 @@ SSH into the control node and follow the steps below:
 - Copy the confing file to **/etc/metricbeat/metricbeat.yml**.
 - Update the **hosts** file to include...
 
-- [webservers]
+#[webservers]
 - Web 1 private ip
   private ip.5 ansible_python_interpreter=/usr/bin/python3
 - Web 2 private ip
   private ip.7 ansible_python_interpreter=/usr/bin/python3
 
-- [elk]
+#[elk]
   private ip.4 ansible_python_interpreter=/usr/bin/python3
 - Run the playbook, and navigate to **Web 1 and Web 2** to check that the installation worked as expected.  Config and playbook file should be copied over to the webserver machines.
 
@@ -116,7 +116,8 @@ Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Metric Where do you copy it? 
    - We copied mertricbeat-playbook.yml into **/etc/ansible/files/** on both *Web 1 and Web 2* machines.
 
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on? Update the Ansible host file to include ip address of web 1, web 2, and elk machines.  **/etc/ansible/host**  
+- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on? 
+- Update the Ansible host file to include ip address of web 1, web 2, and elk machines.  **/etc/ansible/host**  
 
 - _Which URL do you navigate to in order to check that the ELK server is running?
    - **"http://Elk puplic ip:5601/app/kibana"**
