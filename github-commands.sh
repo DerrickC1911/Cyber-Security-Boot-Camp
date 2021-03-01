@@ -5,8 +5,8 @@
 
 git config core.autocrlf true
 
-git pull 
-git add . 
-git commit -m "Added by Bash" 
-git push 
+git pull
+git add .
+git commit -m "Added by Bash"
+git push
 
