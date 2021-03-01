@@ -68,15 +68,14 @@ A summary of the access policies in place can be found in the table below.
 
 >Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because automating confituration of elk makes installation easier, faster for the next install and it takes the risk of human error out of the equation.
 
-The **install-elk.yml* playbook implements the following tasks:
-
+The **install-elk.yml** playbook implements the following tasks:
 In 3-5 bullets, explain the steps of the ELK installation play.
-    - Install docker.io
-    - Install python3-pip
-    - Use more memory
-    - download and launch a docker elk container
-      - We also listed what ports ELK runs on (*5601,9200,5044*)
-    - Enable Docker service on boot
+- Install docker.io
+- Install python3-pip
+- Use more memory
+- download and launch a docker elk container
+  - We also listed what ports ELK runs on (*5601,9200,5044*)
+- Enable Docker service on boot
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
