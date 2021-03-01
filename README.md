@@ -101,16 +101,15 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the confing file to **/etc/metricbeat/metricbeat.yml**.
 - Update the **hosts** file to include...
+
 - [webservers]
 - Web 1 private ip
   private ip.5 ansible_python_interpreter=/usr/bin/python3
 - Web 2 private ip
   private ip.7 ansible_python_interpreter=/usr/bin/python3
 
-[elk]
-## New VM (Elk-Red-Stack-Proj-1)
-private ip.4 ansible_python_interpreter=/usr/bin/python3
-
+- [elk]
+  private ip.4 ansible_python_interpreter=/usr/bin/python3
 - Run the playbook, and navigate to **Web 1 and Web 2** to check that the installation worked as expected.  Config and playbook file should be copied over to the webserver machines.
 
 Answer the following questions to fill in the blanks:_
