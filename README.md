@@ -48,7 +48,7 @@ The configuration details of each machine that was creatd for this project may b
 
 Only the ELK machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - Whitelist
-        - **private ip**
+        - **Jumpbox private ip**
     
 Machines within the network can only be accessed by the jumpbox.
 Which machine did you allow to access your ELK VM? 
@@ -123,7 +123,7 @@ Which URL do you navigate to in order to check that the ELK server is running?
    - **"http://Elk puplic ip:5601/app/kibana"**
 
 **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
- - `ansible-playbook install-filebeat-playbook.yml'
- - `ansible-playbook install-metricbeat-playbook.yml'
+ - `ansible-playbook install-filebeat-playbook.yml`
+ - `ansible-playbook install-metricbeat-playbook.yml`
 
 
