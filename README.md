@@ -78,7 +78,7 @@ The **install-elk.yml** playbook implements the following tasks
 
 The following screenshot displays the result of running `sudo docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/sudo docker ps.png)
+![TODO: Images of the output docker ps output](Images/sudo docker ps.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -118,7 +118,7 @@ Which file do you update to make Ansible run the playbook on a specific machine?
 - Update the Ansible host file to include ip address of web 1, web 2, and elk machines.  **/etc/ansible/host**  
 
 Which URL do you navigate to in order to check that the ELK server is running?
-   - **"http://Elk puplic ip:5601/app/kibana"**
+   - **"http://52.229.36.105:5601/app/kibana"**
 
 **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
  - `ansible-playbook install-filebeat-playbook.yml`
