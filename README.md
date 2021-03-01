@@ -68,7 +68,7 @@ A summary of the access policies in place can be found in the table below.
 >Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because automating confituration of elk makes installation easier, faster for the next install and it takes the risk of human error out of the equation.
 
 The **install-elk.yml* playbook implements the following tasks:
-- In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
+In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
     - Install docker.io
     - Install python3-pip
     - Use more memory
@@ -94,7 +94,7 @@ These Beats allow us to collect the following information from each machine:
  
  - metricbeat *collect metrics from the operating system and from services running on the server. It takes the metrics and statistics that it collects and ships them to the    output that you specify, such as Elasticsearch or Logstash.*
  
- - filebeat *The Filebeat module can handle audit logs, deprecation logs, gc logs, server logs, and slow logs*
+ - filebeat *The Filebeat module can handle audit logs, deprecation logs, gc logs, server logs, and slow logs.*
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
@@ -104,14 +104,13 @@ SSH into the control node and follow the steps below:
 - Update the **hosts** file to include...
 
 #[webservers]
-- Web 1 private ip
-  private ip.5 ansible_python_interpreter=/usr/bin/python3
-- Web 2 private ip
-  private ip.7 ansible_python_interpreter=/usr/bin/python3
+- Web 1 private ip.5 ansible_python_interpreter=/usr/bin/python3
+- Web 2 private ip.7 ansible_python_interpreter=/usr/bin/python3
 
 #[elk]
-  private ip.4 ansible_python_interpreter=/usr/bin/python3
-- Run the playbook, and navigate to **Web 1 and Web 2** to check that the installation worked as expected.  Config and playbook file should be copied over to the webserver machines.
+- private ip.4 ansible_python_interpreter=/usr/bin/python3
+
+After running the playbooks (install-filebeat-playbook and install-metricbeat-playbook) navigate to **Web 1 and Web 2** 'via ssh' to check that the installation worked as expected.  Config and playbook files should be copied over to the webserver machines.
 
 Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Metric Where do you copy it? 
