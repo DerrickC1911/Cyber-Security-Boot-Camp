@@ -33,8 +33,8 @@ What does Metricbeat record? Metribeat records data from the operating system an
 
 The configuration details of each machine that was creatd for this project may be found in the table below.
 
-| Name    | Function       | Ip Addrss | OS    |
-|---------|----------------|-----------|-------|
+| Name    | Function       | Ip Addrss | OS      |
+|---------|----------------|-----------|---------|
 | Jumpbox | Gateway        | private ip  | Linux |
 | Elk     | Elastic Search | private ip  | Linux |
 | Web 1   | Access to Web  | private ip  | Linux |
