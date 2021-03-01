@@ -69,7 +69,7 @@ A summary of the access policies in place can be found in the table below.
 
 The **install-elk.yml* playbook implements the following tasks:
 
-In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
+In 3-5 bullets, explain the steps of the ELK installation play.
     - Install docker.io
     - Install python3-pip
     - Use more memory
