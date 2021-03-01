@@ -48,25 +48,24 @@ The configuration details of each machine that was creatd for this project may b
 
 Only the ELK machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - Whitelist
-        - **<private ip>**
+        - **private ip**
     
-
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? 
-Elk allow access from the jumpbox on ip <private ip>
+Machines within the network can only be accessed by the jumpbox.
+Which machine did you allow to access your ELK VM? 
+Elk allow access from the jumpbox on its private ip
 
 A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-|Jump Box  | No                  | public ip            |
+|Jump Box  | No                  | private ip           |
 |Elk Stack | No                  | private ip           | 
 |Web 1     | No                  | private ip           |
 |Web 2     | No                  | private ip           |
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because automating confituration of elk makes installation easier, faster for the next install and it takes the risk of human error out of the equation.
+>Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because automating confituration of elk makes installation easier, faster for the next install and it takes the risk of human error out of the equation.
 
 The **install-elk.yml* playbook implements the following tasks:
 - In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
@@ -74,7 +73,7 @@ The **install-elk.yml* playbook implements the following tasks:
     - Install python3-pip
     - Use more memory
     - download and launch a docker elk container
-        - We also listed what ports ELK runs on (*5601,9200,5044*)
+      - We also listed what ports ELK runs on (*5601,9200,5044*)
     - Enable Docker service on boot
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
