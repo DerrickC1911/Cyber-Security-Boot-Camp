@@ -48,10 +48,11 @@ The configuration details of each machine that was creatd for this project may b
 
 Only the ELK machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - Whitelist
-        - **Jumpbox private ip**
+  - **Jumpbox private ip**
     
-Machines within the network can only be accessed by the jumpbox.
-Which machine did you allow to access your ELK VM? 
+>Machines within the network can only be accessed by the jumpbox.
+Which machine did you allow to access your ELK VM?
+
 Elk allow access from the jumpbox on its private ip
 
 A summary of the access policies in place can be found in the table below.
