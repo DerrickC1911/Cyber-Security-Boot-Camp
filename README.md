@@ -23,13 +23,14 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-What aspect of security do load balancers protect? What is the advantage of a jump box?
+*What aspect of security do load balancers protect? What is the advantage of a jump box?*
 
 Load balancing protects the system form DDos attacks by shifting attack traffic.  The advantages of a jump box is to give access to a user from a single point of entry that can be secured and monitored.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the application and system logs.
 
-What does Filebeat watch for?  Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing
+*What does Filebeat watch for?*  
+Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing
 What does Metricbeat record? Metribeat records data from the operating system and services running on the server and sends them to Elasticsearch or Logstash
 
 The configuration details of each machine that was creatd for this project may be found in the table below.
