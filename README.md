@@ -4,9 +4,9 @@ Cyber Book Camp Materials
 
 The files in this repository were used to configure the network depicted below.  Click on link to see diagram.
 
->[Images/Cloud-Network-Diagram](https://github.com/DerrickC1911/Cyber-Security-Boot-Camp/blob/main/Diagrams/Full-Diagram-with-ELK.PNG)
+>"[Images/Cloud-Network-Diagram](https://github.com/DerrickC1911/Cyber-Security-Boot-Camp/blob/main/Diagrams/Full-Diagram-with-ELK.PNG)"
 >
->[Test/Cloud-Network-Diagram](.//Diagrams/Full-Diagram-with-ELK.PNG)
+>[Cloud-Network-Diagram](.//Diagrams/Full-Diagram-with-ELK.PNG)
 
 
 
