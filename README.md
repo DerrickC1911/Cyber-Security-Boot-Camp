@@ -36,11 +36,11 @@ What does Metricbeat record? Metribeat records data from the operating system an
 The configuration details of each machine that was creatd for this project may be found in the table below.
 
 | Name    | Function       | Ip Addrss | OS      |
-|---------|----------------|-----------|---------|
-| Jumpbox | Gateway        | private ip  | Linux |
-| Elk     | Elastic Search | private ip  | Linux |
-| Web 1   | Access to Web  | private ip  | Linux |
-| Web 2   | Access to Web  | private ip  | Linux |
+|---------|----------------|-------------|---------|
+| Jumpbox | Gateway        | public ip   | Linux   |
+| Elk     | Elastic Search | private ip  | Linux   |
+| Web 1   | Access to Web  | private ip  | Linux   |
+| Web 2   | Access to Web  | private ip  | Linux   |
 
 ### Access Policies
 
@@ -48,7 +48,7 @@ The configuration details of each machine that was creatd for this project may b
 
 Only the ELK machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - Whitelist
-  - **Jumpbox private ip**
+  - **Jumpbox's private ip**
     
 >Machines within the network can only be accessed by the jumpbox.
 Which machine did you allow to access your ELK VM?
@@ -59,7 +59,7 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-|Jump Box  | No                  | private ip           |
+|Jump Box  | No                  | public ip            |
 |Elk Stack | No                  | private ip           | 
 |Web 1     | No                  | private ip           |
 |Web 2     | No                  | private ip           |
@@ -78,7 +78,7 @@ The **install-elk.yml** playbook implements the following tasks
 
 The following screenshot displays the result of running `sudo docker ps` after successfully configuring the ELK instance.
 
-![TODO: Images of the output docker ps output](Images/sudo docker ps.png)
+!Images of the output docker ps output](.//Images/sudo-docker-ps.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
