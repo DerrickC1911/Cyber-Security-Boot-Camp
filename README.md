@@ -78,7 +78,7 @@ The **install-elk.yml** playbook implements the following tasks
 
 The following screenshot displays the result of running `sudo docker ps` after successfully configuring the ELK instance.
 
->Image of the output docker ps output](.//Images/sudo-docker-ps.png)
+>[Image of the output docker ps output](.//Images/sudo-docker-ps.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -99,7 +99,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 - Copy the confing file to **/etc/metricbeat/metricbeat.yml**.
-- Update the **hosts** file to include...
+- Update the `**hosts**` file to include...
 
 #[webservers]
 - Web 1 private ip.5 ansible_python_interpreter=/usr/bin/python3
