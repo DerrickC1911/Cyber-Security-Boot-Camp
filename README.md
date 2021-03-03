@@ -118,7 +118,7 @@ Which file do you update to make Ansible run the playbook on a specific machine?
 - Update the Ansible host file to include ip address of web 1, web 2, and elk machines. **/etc/ansible/host**  
 
 Which URL do you navigate to in order to check that the ELK server is running?
-   - **http://52.229.36.105:5601/app/kibana**
+   - **http://**Elk Public IP**:5601/app/kibana**
 
 **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
  - `ansible-playbook install-filebeat-playbook.yml`
