@@ -78,7 +78,7 @@ The **install-elk.yml** playbook implements the following tasks
 
 The following screenshot displays the result of running `sudo docker ps` after successfully configuring the ELK instance.
 
-!Images of the output docker ps output](.//Images/sudo-docker-ps.png)
+>Image of the output docker ps output](.//Images/sudo-docker-ps.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
