@@ -89,8 +89,8 @@ We have installed the following Beats on these machines:
 - Web 1 private ip
 - Web 2 private ip
 
-These Beats allow us to collect the following information from each machine:
-In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+Filebeat and Metricbeat allow us to collect the following information from each machine:
+
  - metricbeat *collect metrics from the operating system and from services running on the server. It takes the metrics and statistics that it collects and ships them to the         output that you specify, such as Elasticsearch or Logstash.*
  - filebeat *The Filebeat module can handle audit logs, deprecation logs, gc logs, server logs, and slow logs.*
 
