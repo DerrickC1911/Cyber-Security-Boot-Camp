@@ -1,4 +1,4 @@
-# Cyber-Security-Boot-Camp
+# Cyber-Securty-BootCamp
 Cyber Book Camp Materials
 ## Automated ELK Stack Deployment
 
